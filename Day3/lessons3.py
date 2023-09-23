@@ -91,3 +91,35 @@ else:
     "no change"
 
 print(f"Your final bill is: {price}")
+
+# Love Calculator
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n").lower()
+name2 = input("What is their name? \n").lower()
+
+names = name1.lower() + name2.lower()
+
+t = names.count("t")
+r = names.count("r")
+u = names.count("u")
+e = names.count("e")
+
+l = names.count("l")
+o = names.count("o")
+v = names.count("v")
+e1 = names.count("e")
+
+first = t + r + u + e
+second = l + o + v + e1
+
+first_str = str(first)
+second_str = str(second)
+
+score = first_str + second_str
+
+if int(score) < 10 or int(score) > 90:
+    print(f"Your score is {score}, you go together like coke and mentos.")
+elif int(score) > 40 and int(score) < 50:
+    print(f"Your score is {score}, you are alright together.")
+else:
+    print(f"Your score is {score}.")
