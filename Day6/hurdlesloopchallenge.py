@@ -14,3 +14,6 @@
 #     turn_right()
 #     move()
 #     turn_left()
+
+# while at_goal() == False:
+#     jump_hurdle()
