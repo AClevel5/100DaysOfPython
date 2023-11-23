@@ -1,5 +1,5 @@
 import random
-import ./wordlist.py as word_list
+from wordlist import word_list
 
 stages = [
     """
@@ -66,7 +66,7 @@ stages = [
 """,
 ]
 
-random_word = random.choice(word_list)git add
+random_word = random.choice(word_list)
 display = []
 word_length = len(random_word)
 game_over = False
