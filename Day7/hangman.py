@@ -1,4 +1,5 @@
 import random
+import ./wordlist.py as word_list
 
 stages = [
     """
@@ -65,8 +66,7 @@ stages = [
 """,
 ]
 
-word_list = ["aardvark", "baboon", "camel", "dog", "trout"]
-random_word = random.choice(word_list)
+random_word = random.choice(word_list)git add
 display = []
 word_length = len(random_word)
 game_over = False
