@@ -45,12 +45,18 @@ def encrypt(plain_text, shift_amount):
 
 
 def decode(plain_text, shift_amount):
-    cipher_text = ""
+    decipher_text = ""
     for letter in plain_text:
         position = alphabet.index(letter)
         new_position = position - shift_amount
         if new_position < 0:
             new_position = new_position + 26
         new_letter = alphabet[new_position]
-        cipher_text += new_letter
-    print(cipher_text)
+        decipher_text += new_letter
+    print(decipher_text)
+
+
+if direction == "encrypt":
+    encrypt(text, shift)
+elif direction == "decode":
+    decode(text, shift)
